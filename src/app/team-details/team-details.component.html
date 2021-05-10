@@ -1,0 +1,45 @@
+<div class="team-detail-container">
+  <div class="team-name" #teamNameContainer>
+    <i class="fa fa-arrow-left" aria-hidden="true" (click)="backNavigate()"></i>
+    <h3 class="title">{{teamDetails?.teamName}}</h3>
+    <!-- <h3 class="title">hello</h3> -->
+  </div>
+  <div class="tabs-container" #tabsContainer>
+    <mat-tab-group
+      animationDuration="0ms"
+      mat-align-tabs="center"
+      [disableRipple]="true"
+      >
+      <mat-tab label="MATCHES">
+        <div class="inner-tab match-details">
+          <ng-container *ngFor="let item of teamDetails?.lastFiveResults; let i = index">
+            <div class="match-result">
+              <p class="date">{{item.date}}</p>
+              <div class="team" [ngClass]="{'team-top': item.type === 'HOME', 'team-bottom': item.type === 'AWAY'}">
+                <img [attr.src]="teamDetails?.logo" [attr.alt]="teamDetails?.teamName">
+                <span class="name">{{teamDetails?.teamName}}</span>
+                <span class="score">{{item.score | findScore}}</span>
+              </div>
+              <div class="team" [ngClass]="{'team-bottom': item.type === 'HOME', 'team-top': item.type === 'AWAY'}">
+                <img [attr.src]="item.opponentLogo" [attr.alt]="item.team">
+                <span class="name away-team">{{item.team}}</span>
+                <span class="score away-team">{{item.score | findSecondScore}}</span>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </mat-tab>
+      <mat-tab label="PLAYERS">
+        <div class="inner-tab player-details">
+          <div class="players" *ngFor="let item of players?.playersList">
+            <div class="user-logo">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <p class="plr-name">{{item.name}}</p>
+            <p class="plr-position">{{item.position}}</p>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

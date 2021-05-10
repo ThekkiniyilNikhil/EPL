@@ -1,0 +1,170 @@
+@import '../../assets/styles/colors.scss';
+.team-detail-container {
+  margin-top: 32px;
+  border-radius: 8px;
+  border: 1px solid $borderColor;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(42px, auto);
+  .team-name {
+    grid-column: 1/span 12;
+    grid-row: 1;
+    padding: 0 24px;
+    border-radius: 8px 8px 0 0;
+    text-transform: capitalize;
+    background-color: rebeccapurple;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    i {
+      cursor: pointer;
+    }
+    .title {
+      margin-left: 10px;
+    }
+  }
+  .tabs-container {
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    background-color: rebeccapurple;
+  }
+}
+
+::ng-deep mat-tab-group {
+  .mat-tab-header {
+    color: #fff;
+    box-shadow: 0 3px 3px #bdbdbd;
+    z-index: 1;
+  }
+  .mat-tab-label-container {
+    .mat-tab-list {
+      .mat-tab-labels {
+        .mat-tab-label {
+          height: 38px;
+          opacity: 1;
+          .mat-tab-label-content {
+            font-weight: 300;
+            opacity: 0.8;
+          }
+          &.mat-tab-label-active {
+            position: relative;
+            &::after {
+              content: '';
+              height: 3px;
+              width: 100%;
+              background-color: #fff;
+              border-radius: 4px;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+            .mat-tab-label-content {
+              font-weight: 600;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mat-tab-body-wrapper {
+    background-color: #fff;
+    .inner-tab {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: auto;
+      &.match-details {
+        .match-result {
+          padding: 20px;
+          border-bottom: 1px solid $borderColor;
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-auto-rows: auto;
+          &:nth-child(odd) {
+            grid-column: 1 / span 3;
+            border-right: 1px solid $borderColor;
+          }
+          &:nth-child(even) {
+            grid-column: 4 / span 3;
+            border-right: 0;
+          }
+          .date {
+            margin: 0 0 12px 0;
+            grid-column: 1 / span 6;
+            grid-row: 1;
+            position: relative;
+            font-size: 14px;
+            opacity: 0.5;
+          }
+          .team {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            img {
+              width: 20px;
+              grid-column: 1;
+            }
+            .name {
+              grid-column: 2 / span 6;
+              text-transform: capitalize;
+              &.away-team {
+                opacity: 0.6;
+              }
+            }
+            .score {
+              grid-column: 8;
+              &.away-team {
+                opacity: 0.6;
+              }
+            }
+            &.team-top {
+              grid-column: 1 / span 6;
+              grid-row: 2;
+              margin-bottom: 10px;
+            }
+            &.team-bottom {
+              grid-column: 1 / span 6;
+              grid-row: 3;
+            }
+          }
+        }
+      }
+      &.player-details {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(180px, auto);
+        grid-gap: 20px;
+        .players {
+          border: 1px solid $borderColor;
+          border-radius: 4px;
+          box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.2);
+          .user-logo {
+            height: 100px;
+            background-color: $lightGrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              font-size: 80px;
+              opacity: 0.6;
+            }
+          }
+          .plr-name,
+          .plr-position {
+            margin: 10px 5px 0 10px;
+            text-transform: capitalize;
+          }
+          .plr-name {
+            font-size: 16px;
+            font-weight: 600;
+          }
+          .plr-position {
+            margin-top: 0 !important;
+            font-size: 14px;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

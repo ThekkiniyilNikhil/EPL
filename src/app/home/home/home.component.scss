@@ -1,0 +1,175 @@
+
+@import '../../../assets/styles/colors.scss';
+.home-container {
+  margin: 32px 0 0 0;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(64px, auto);
+  .header {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 78px;
+    background-color: $brandColor;
+    border-radius: 8px 8px 0 0;
+    img {
+      grid-column: 1;
+      align-self: center;
+      justify-self: center;
+    }
+    .epl-title {
+      grid-column: 2 / span 3;
+      align-self: center;
+      margin: 0;
+      font-size: 20px;
+      color: $white;
+      line-height: 20px;
+      span {
+        font-size: 16px;
+        opacity: 0.5;
+      }
+    }
+  }
+  .serach-box {
+    grid-column: 9 / span 4;
+    grid-row: 2;
+    align-self: center;
+    ::ng-deep mat-form-field {
+      border: 1px solid $borderColor;
+      min-width: 245px;
+      height: 32px;
+      padding: 0 5px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      .mat-icon {
+        margin-right: 5px;
+      }
+      input {
+        height: 32px;
+      }
+    }
+  }
+  .team-data-table {
+    grid-column: 1 / span 12;
+    grid-row: 3;
+  }
+  .indicators-container {
+    grid-column: 1 / span 12;
+    grid-row: 4;
+    padding: 30px 15px;
+    .indicators {
+      padding: 15px;
+      border: 1px solid $borderColor;
+      border-radius: 4px;
+      background-color: $lightWhite-1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      .left {
+        grid-column: 1;
+      }
+      .right {
+        grid-column: 2;
+      }
+      .indicator-title {
+        margin: 0;
+        font-size: 14px;
+      }
+      .indicator-name {
+        margin: 8px 0;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+          margin: 0;
+        }
+        .indi {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-right: 10px;
+          &.blue {
+            background-color: #4285F4;
+          }
+          &.orange {
+            background-color: #FA7B17;
+          }
+          &.red {
+            background-color: #EA4335;
+          }
+        }
+        img {
+          width: 14px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.position {
+  padding-left: 5px;
+  width: 25px;
+  flex: 0.4;
+  justify-content: center;
+}
+.teamName {
+  flex: 3.2;
+}
+.statusImage {
+  flex: 1.4;
+}
+.minHeight-42 {
+  min-height: 42px;
+}
+
+::ng-deep mat-table {
+  font-size: 14px;
+  .mat-header-row {
+    font-weight: bold;
+    border-bottom: 0;
+    background-color: $lightGrey;
+    @extend .minHeight-42;
+    .standings {
+      @extend .position;
+    }
+    .team-name {
+      @extend .teamName;
+    }
+    .status {
+      @extend .statusImage;
+    }
+  }
+  .mat-row {
+    margin-bottom: 1px;
+    border-bottom: 1px solid $lightWhite;
+    cursor: pointer;
+    &:hover {
+      background-color: $lightWhite;
+    }
+    &:last-child {
+      border-bottom: 0
+    }
+    @extend .minHeight-42;
+    .standings {
+      @extend .position;
+    }
+    .team-name {
+      @extend .teamName;
+      .team-logo {
+        width: 20px;
+        margin-right: 8px;
+      }
+    }
+    .status {
+      @extend .statusImage;
+      .status-image {
+        margin-right: 3px;
+      }
+    }
+  }
+}
+

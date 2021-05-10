@@ -1,0 +1,492 @@
+[
+  {
+    "teamId": 1,
+    "teamName": "arsenal",
+    "logo": "/assets/club_logo/arn.png",
+    "matchesPlayed": 33,
+    "win": 13,
+    "draw": 7,
+    "lost": 13,
+    "goalScored": 44,
+    "goalConceeded": 37,
+    "lastFiveStatus": ["L", "D", "W", "L", "D"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [0, 1],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [1, 1],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [2, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [0, 3],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [1, 1],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 2,
+    "teamName": "chelsea",
+    "logo": "/assets/club_logo/che.png",
+    "matchesPlayed": 33,
+    "win": 16,
+    "draw": 10,
+    "lost": 7,
+    "goalScored": 51,
+    "goalConceeded": 31,
+    "lastFiveStatus": ["W", "D", "W", "L", "D"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [1, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [1, 1],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [2, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "liverpool",
+        "score": [0, 3],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/liv.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [2, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 3,
+    "teamName": "everton",
+    "logo": "/assets/club_logo/eve.png",
+    "matchesPlayed": 32,
+    "win": 15,
+    "draw": 7,
+    "lost": 10,
+    "goalScored": 44,
+    "goalConceeded": 40,
+    "lastFiveStatus": ["W", "D", "D", "D", "L"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [1, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [1, 1],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [0, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [0, 0],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [0, 2],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 4,
+    "teamName": "leeds united",
+    "logo": "/assets/club_logo/leeds.png",
+    "matchesPlayed": 33,
+    "win": 14,
+    "draw": 5,
+    "lost": 14,
+    "goalScored": 50,
+    "goalConceeded": 50,
+    "lastFiveStatus": ["D", "D", "W", "W", "W"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [0, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [2, 2],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [2, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [3, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [5, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 5,
+    "teamName": "leicester city",
+    "logo": "/assets/club_logo/lci.png",
+    "matchesPlayed": 33,
+    "win": 19,
+    "draw": 5,
+    "lost": 9,
+    "goalScored": 60,
+    "goalConceeded": 38,
+    "lastFiveStatus": ["W", "W", "L", "L", "W"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [1, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [2, 1],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "manchester city",
+        "score": [0, 2],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/mci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [0, 3],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [5, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 6,
+    "teamName": "liverpool",
+    "logo": "/assets/club_logo/liv.png",
+    "matchesPlayed": 33,
+    "win": 15,
+    "draw": 9,
+    "lost": 9,
+    "goalScored": 55,
+    "goalConceeded": 39,
+    "lastFiveStatus": ["D", "D", "W", "W", "W"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [1, 1],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [1, 1],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [2, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [3, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [5, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 7,
+    "teamName": "manchester city",
+    "logo": "/assets/club_logo/mci.png",
+    "matchesPlayed": 33,
+    "win": 24,
+    "draw": 4,
+    "lost": 4,
+    "goalScored": 69,
+    "goalConceeded": 24,
+    "lastFiveStatus": ["W", "L", "W", "W", "W"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [1, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [1, 2],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [2, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [3, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [5, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 8,
+    "teamName": "manchester united",
+    "logo": "/assets/club_logo/mun.png",
+    "matchesPlayed": 33,
+    "win": 19,
+    "draw": 10,
+    "lost": 4,
+    "goalScored": 64,
+    "goalConceeded": 35,
+    "lastFiveStatus": ["D", "W", "W", "W", "W"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [1, 1],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [2, 1],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [2, 0],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [3, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [5, 2],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 9,
+    "teamName": "tottenham hotspur",
+    "logo": "/assets/club_logo/toh.png",
+    "matchesPlayed": 33,
+    "win": 15,
+    "draw": 8,
+    "lost": 10,
+    "goalScored": 56,
+    "goalConceeded": 38,
+    "lastFiveStatus": ["W", "D", "L", "D", "W"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [1, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [2, 2],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [0, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [3, 3],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "westham united",
+        "score": [5, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/whu.png"
+      }
+    ]
+  },
+  {
+    "teamId": 10,
+    "teamName": "westham united",
+    "logo": "/assets/club_logo/whu.png",
+    "matchesPlayed": 33,
+    "win": 16,
+    "draw": 7,
+    "lost": 10,
+    "goalScored": 53,
+    "goalConceeded": 43,
+    "lastFiveStatus": ["L", "L", "W", "W", "D"],
+    "lastFiveResults": [
+      {
+        "date": "25-04-2021",
+        "team": "tottenham hotspur",
+        "score": [0, 1],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/toh.png"
+      },
+      {
+        "date": "10-04-2021",
+        "team": "leeds united",
+        "score": [1, 2],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/leeds.png"
+      },
+      {
+        "date": "03-04-2021",
+        "team": "leicester city",
+        "score": [2, 0],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/lci.png"
+      },
+      {
+        "date": "14-03-2021",
+        "team": "chelsea",
+        "score": [3, 0],
+        "type": "AWAY",
+        "opponentLogo": "/assets/club_logo/che.png"
+      },
+      {
+        "date": "10-03-2021",
+        "team": "manchester united",
+        "score": [2, 2],
+        "type": "HOME",
+        "opponentLogo": "/assets/club_logo/mun.png"
+      }
+    ]
+  }
+]

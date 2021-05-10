@@ -1,0 +1,502 @@
+[
+  {
+    "teamId": 1,
+    "teamName": "arsenal",
+    "playersList": [
+      {
+        "name": "Bernd Leno",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "Calum Chambers",
+        "position": "defender"
+      },
+      {
+        "name": "Holding",
+        "position": "defender"
+      },
+      {
+        "name": "gabriel",
+        "position": "defender"
+      },
+      {
+        "name": "bellerin",
+        "position": "defender"
+      },
+      {
+        "name": "thomas lemar",
+        "position": "midfielder"
+      },
+      {
+        "name": "dani ceballos",
+        "position": "midfielder"
+      },
+      {
+        "name": "nicolas pepe",
+        "position": "midfielder"
+      },
+      {
+        "name": "martin odegaard",
+        "position": "midfielder"
+      },
+      {
+        "name": "Pierre-Emerick Aubamayang",
+        "position": "midfielder"
+      },
+      {
+        "name": "andres lacazette",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 2,
+    "teamName": "chelsea",
+    "playersList": [
+      {
+        "name": "Edwerd mendy",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "andre rudiger",
+        "position": "defender"
+      },
+      {
+        "name": "andre christensen",
+        "position": "defender"
+      },
+      {
+        "name": "thiago silva",
+        "position": "defender"
+      },
+      {
+        "name": "ben chilwell",
+        "position": "defender"
+      },
+      {
+        "name": "cezar azplicueta",
+        "position": "defender"
+      },
+      {
+        "name": "jorginho",
+        "position": "midfielder"
+      },
+      {
+        "name": "ngolo kante",
+        "position": "midfielder"
+      },
+      {
+        "name": "christian pulisic",
+        "position": "forward"
+      },
+      {
+        "name": "mason mount",
+        "position": "forward"
+      },
+      {
+        "name": "timo werner",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 3,
+    "teamName": "everton",
+    "playersList": [
+      {
+        "name": "jordan pickford",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "lucas digne",
+        "position": "defender"
+      },
+      {
+        "name": "ben godfrey",
+        "position": "defender"
+      },
+      {
+        "name": "micheal keane",
+        "position": "defender"
+      },
+      {
+        "name": "holgate",
+        "position": "defender"
+      },
+      {
+        "name": "bernard",
+        "position": "midfielder"
+      },
+      {
+        "name": "andre gomes",
+        "position": "midfielder"
+      },
+      {
+        "name": "adam doucoure",
+        "position": "midfielder"
+      },
+      {
+        "name": "alex iwobi",
+        "position": "midfielder"
+      },
+      {
+        "name": "richarlison",
+        "position": "forward"
+      },
+      {
+        "name": "domanic calvert-lewin",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 4,
+    "teamName": "leeds united",
+    "playersList": [
+      {
+        "name": "ivan meslier",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "ayling",
+        "position": "defender"
+      },
+      {
+        "name": "diego llorente",
+        "position": "defender"
+      },
+      {
+        "name": "lee cooper",
+        "position": "defender"
+      },
+      {
+        "name": "alloski",
+        "position": "defender"
+      },
+      {
+        "name": "kalvin philips",
+        "position": "midfielder"
+      },
+      {
+        "name": "rafinha",
+        "position": "midfielder"
+      },
+      {
+        "name": "dallas",
+        "position": "midfielder"
+      },
+      {
+        "name": "roberts",
+        "position": "midfielder"
+      },
+      {
+        "name": "harrison",
+        "position": "midfielder"
+      },
+      {
+        "name": "patric bamford",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 5,
+    "teamName": "leicester city",
+    "playersList": [
+      {
+        "name": "kasper schmeichel",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "fofana",
+        "position": "defender"
+      },
+      {
+        "name": "jons evans",
+        "position": "defender"
+      },
+      {
+        "name": "soyuncu",
+        "position": "defender"
+      },
+      {
+        "name": "albrighton",
+        "position": "midfielder"
+      },
+      {
+        "name": "yel tielemans",
+        "position": "midfielder"
+      },
+      {
+        "name": "ndidi",
+        "position": "midfielder"
+      },
+      {
+        "name": "castagne",
+        "position": "midfielder"
+      },
+      {
+        "name": "ayoze perez",
+        "position": "forward"
+      },
+      {
+        "name": "iheanacho",
+        "position": "forward"
+      },
+      {
+        "name": "jamy vardy",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 6,
+    "teamName": "liverpool",
+    "playersList": [
+      {
+        "name": "alisson becker",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "andy robertson",
+        "position": "defender"
+      },
+      {
+        "name": "kabak",
+        "position": "defender"
+      },
+      {
+        "name": "philips",
+        "position": "defender"
+      },
+      {
+        "name": "trent alexander arnold",
+        "position": "defender"
+      },
+      {
+        "name": "james milner",
+        "position": "midfielder"
+      },
+      {
+        "name": "fabinho",
+        "position": "midfielder"
+      },
+      {
+        "name": "thiago alcantata",
+        "position": "midfielder"
+      },
+      {
+        "name": "sadio mane",
+        "position": "forward"
+      },
+      {
+        "name": "roberto firmino",
+        "position": "forward"
+      },
+      {
+        "name": "mohammad salah",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 7,
+    "teamName": "manchester city",
+    "playersList": [
+      {
+        "name": "ederson moraes",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "benjemin mendy",
+        "position": "defender"
+      },
+      {
+        "name": "ayemeric laporte",
+        "position": "defender"
+      },
+      {
+        "name": "nathan ake",
+        "position": "defender"
+      },
+      {
+        "name": "jao cancelo",
+        "position": "defender"
+      },
+      {
+        "name": "raheem sterling",
+        "position": "midfielder"
+      },
+      {
+        "name": "fernandinho",
+        "position": "midfielder"
+      },
+      {
+        "name": "ferran torres",
+        "position": "midfielder"
+      },
+      {
+        "name": "ruben hernandez",
+        "position": "midfielder"
+      },
+      {
+        "name": "sergio aguero",
+        "position": "forward"
+      },
+      {
+        "name": "gabriel jesus",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 8,
+    "teamName": "manchester united",
+    "playersList": [
+      {
+        "name": "dean henderson",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "luke shaw",
+        "position": "defender"
+      },
+      {
+        "name": "harry maguire",
+        "position": "defender"
+      },
+      {
+        "name": "victor lindelof",
+        "position": "defender"
+      },
+      {
+        "name": "arron wan bissaka",
+        "position": "defender"
+      },
+      {
+        "name": "fred",
+        "position": "midfielder"
+      },
+      {
+        "name": "steven mctominay",
+        "position": "midfielder"
+      },
+      {
+        "name": "paul pogba",
+        "position": "midfielder"
+      },
+      {
+        "name": "bruno fernandes",
+        "position": "forward"
+      },
+      {
+        "name": "marcus rashford",
+        "position": "forward"
+      },
+      {
+        "name": "edinson cavani",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 9,
+    "teamName": "tottenham hotspur",
+    "playersList": [
+      {
+        "name": "huego lloris",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "aurier",
+        "position": "defender"
+      },
+      {
+        "name": "eric dier",
+        "position": "defender"
+      },
+      {
+        "name": "rodon",
+        "position": "defender"
+      },
+      {
+        "name": "reguilion",
+        "position": "defender"
+      },
+      {
+        "name": "lo celso",
+        "position": "midfielder"
+      },
+      {
+        "name": "hojbjerg",
+        "position": "midfielder"
+      },
+      {
+        "name": "ndombele",
+        "position": "midfielder"
+      },
+      {
+        "name": "lucas moura",
+        "position": "forward"
+      },
+      {
+        "name": "harry kane",
+        "position": "forward"
+      },
+      {
+        "name": "heung min son",
+        "position": "forward"
+      }
+    ]
+  },
+  {
+    "teamId": 10,
+    "teamName": "westham united",
+    "playersList": [
+      {
+        "name": "lucas fabianski",
+        "position": "Goalkeepr"
+      },
+      {
+        "name": "coufal",
+        "position": "defender"
+      },
+      {
+        "name": "dawson",
+        "position": "defender"
+      },
+      {
+        "name": "diop",
+        "position": "defender"
+      },
+      {
+        "name": "cresswell",
+        "position": "defender"
+      },
+      {
+        "name": "soucek",
+        "position": "midfielder"
+      },
+      {
+        "name": "rice",
+        "position": "midfielder"
+      },
+      {
+        "name": "fornals",
+        "position": "midfielder"
+      },
+      {
+        "name": "jesse lingard",
+        "position": "forward"
+      },
+      {
+        "name": "benrahma",
+        "position": "forward"
+      },
+      {
+        "name": "antonio",
+        "position": "forward"
+      }
+    ]
+  }
+]

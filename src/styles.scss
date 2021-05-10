@@ -1,1 +1,51 @@
+
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+@import "assets/styles/colors.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+.app-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.arsenalBg {
+  background-color: #ff0000 !important;
+}
+.chelseaBg {
+  background-color: #0a4595 !important;
+}
+.evertonBg {
+  background-color: #003399 !important;
+}
+.leedsBg {
+  background-color: #152F7B !important;
+}
+.leicesterBg {
+  background-color: #273e8a !important;
+}
+.liverpoolBg {
+  background-color: #d3171e !important;
+}
+.mciBg {
+  background-color: #223344 !important;
+}
+.munBg {
+  background-color: #d20222 !important;
+}
+.tottenhamBg {
+  background-color: #0f204b !important;
+}
+.westhamBg {
+  background-color: #540d1a !important;
+}
+

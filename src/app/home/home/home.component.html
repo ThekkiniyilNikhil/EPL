@@ -1,0 +1,115 @@
+<div class="home-container">
+  <div class="header">
+    <img src="/assets/images/epl_logo.png" alt="epl_logo">
+    <h2 class="epl-title">
+      Premier League<br>
+      <span class="fw-300">2020-2021</span>
+    </h2>
+  </div>
+
+  <div class="serach-box">
+    <mat-form-field>
+      <mat-icon matPrefix>search</mat-icon>
+      <input matInput type="text" class="search-input" (keyup)="applyFilter($event)"/>
+  </mat-form-field>
+  </div>
+
+  <div class="team-data-table">
+    <mat-table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="teamId">
+        <mat-header-cell *matHeaderCellDef disableClear="true" class="standings"></mat-header-cell>
+        <mat-cell class="cell-data standings" *matCellDef="let row; let i = index">{{i + 1}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="teamName">
+        <mat-header-cell *matHeaderCellDef disableClear="true" class="team-name">Club</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row" class="team-name">
+          <img [attr.src]="row.logo" alt="team-logo" class="team-logo">
+          {{row.teamName | uppercase | nameAbbreviate}}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="matchesPlayed">
+        <mat-header-cell *matHeaderCellDef disableClear="true">MP</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{row.matchesPlayed}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="win">
+        <mat-header-cell *matHeaderCellDef disableClear="true">W</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{row.win}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="draw">
+        <mat-header-cell *matHeaderCellDef disableClear="true">D</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{row.draw}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="lost">
+        <mat-header-cell *matHeaderCellDef disableClear="true">L</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{row.lost}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="goalScored">
+        <mat-header-cell *matHeaderCellDef disableClear="true">GS</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{row.goalScored}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="goalConceeded">
+        <mat-header-cell *matHeaderCellDef disableClear="true">GC</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{row.goalConceeded}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="goalDifference">
+        <mat-header-cell *matHeaderCellDef disableClear="true">GD</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{ calculateGD(row.goalScored, row.goalConceeded) }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="totalPoints">
+        <mat-header-cell *matHeaderCellDef disableClear="true">Pts</mat-header-cell>
+        <mat-cell class="cell-data" *matCellDef="let row">{{ calculatePoints(row.win, row.draw) }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="lastFiveStatus">
+        <mat-header-cell *matHeaderCellDef disableClear="true" class="status">Last 5</mat-header-cell>
+        <mat-cell class="cell-data status" *matCellDef="let row">
+          <span *ngFor="let item of row.lastFiveStatus" class="status-image">
+            <img src="/assets/images/win.svg" alt="win" *ngIf="item === 'W'">
+            <img src="/assets/images/lost.svg" alt="draw" *ngIf="item === 'L'">
+            <img src="/assets/images/draw.svg" alt="loss" *ngIf="item === 'D'">
+          </span>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row
+        *matRowDef="let row; columns: displayedColumns; let i = index"
+        title={{row.teamName}}
+        (click)="viewDetails(row)"
+        [ngStyle]="{
+          'border-left': i <= 3 ?
+           '2.5px solid #4285F4' : i == 4 ? '
+           2.5px solid #FA7B17' : i >= 8 ?  '2.5px solid #EA4335': ''}">
+      </mat-row>
+    </mat-table>
+  </div>
+
+  <div class="indicators-container">
+    <div class="indicators">
+      <div class="left">
+        <h3 class="indicator-title">Qualification/Relegation</h3>
+        <p class="indicator-name" *ngFor="let item of qualificationDetails">
+          <span class="indi" [ngClass]="{blue: item.id === 'UEFA', orange: item.id === 'UECL', red: item.id === 'RELEGATION'}"></span>
+          <span>{{item.name}}</span>
+        </p>
+      </div>
+      <div class="right">
+        <h3 class="indicator-title">Last 5 matches</h3>
+        <p class="indicator-name" *ngFor="let item of resultIndicator">
+          <img [attr.src]="item.imgSrc" [attr.alt]="item.name">
+          {{item.name}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
